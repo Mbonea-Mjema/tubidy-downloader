@@ -1,0 +1,10 @@
+first install bs4 and requests
+
+using pip
+pip install bs4
+pip install requests
+
+
+import tubidy
+
+Song('havana')
