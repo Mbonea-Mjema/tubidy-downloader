@@ -30,5 +30,7 @@ def Inner(songs_list):
         print('got response')
         final.append((response.content,detail[1]))
         print('got a song')
-    return final
-
+    for song in final:
+        with open('./music'+str(final.index(song)+1)+'.mp3','wb') as f:
+            f.write(song)
+            
